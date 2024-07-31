@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate Medicine</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Medicine Donation</h1>
+        <nav>
+            <a href="donate.html">Donate Medicine</a>
+            <a href="view.html">View Donations</a>
+        </nav>
+    </header>
+    
+    <section id="donate">
+        <h2>Donate Medicine</h2>
+        <form id="donate-form" enctype="multipart/form-data">
+            <label for="medName">Medicine Name:</label>
+            <input type="text" id="medName" name="medName" required>
+            
+            <label for="quantity">Quantity:</label>
+            <input type="number" id="quantity" name="quantity" required>
+            
+            <label for="expiration">Expiration Date:</label>
+            <input type="date" id="expiration" name="expiration" required>
+            
+            <label for="image">Tablet Image:</label>
+            <input type="file" id="image" name="image" accept="image/*" required>
+            
+            <label for="contact">Contact Information:</label>
+            <input type="text" id="contact" name="contact" required>
+            
+            <button type="submit">Submit Donation</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Medicine Donation</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
